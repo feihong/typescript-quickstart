@@ -1,0 +1,6 @@
+{
+  "name": "typescript-quickstart",
+  "devDependencies": {
+    "ts-loader": "^1.1.0"
+  }
+}

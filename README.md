@@ -5,7 +5,7 @@ A very simple TypeScript example project
 # Installation
 
 ```
-npm install -g typescript typings
+npm install -g typescript typings webpack
 typings install
 ```
 
