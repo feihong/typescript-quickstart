@@ -8,6 +8,7 @@ A very simple TypeScript example project, for Python developers.
 
 ```
 npm install -g typescript typings webpack
+npm link typescript
 typings install dt~jquery --global --save
 ```
 
