@@ -1,12 +1,21 @@
 # TypeScript Quickstart
 
-A very simple TypeScript example project
+A very simple TypeScript example project, for Python developers.
 
 # Installation
+
+## Node
 
 ```
 npm install -g typescript typings webpack
 typings install
+```
+
+## Python
+
+```
+mkvirtualenv -p python3 typescript
+pip install Invoke
 ```
 
 # Installing type definitions
