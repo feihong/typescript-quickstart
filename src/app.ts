@@ -22,7 +22,7 @@ const greetings = [
 $('#message').text('Hello World!')
 
 
-$('button').on('click', (evt) => {
+$('button.greeting').on('click', (evt) => {
   let index = Math.floor(Math.random() * greetings.length)
   let text = greetings[index]
   $('#message').text(text)

@@ -19,8 +19,12 @@ mkvirtualenv -p python3 typescript
 pip install Invoke
 ```
 
-# Installing type definitions
+## Installing type definitions
 
 ```
 typings install dt~jquery --global --save
 ```
+
+## Notes
+
+We're using the [Materialize](http://materializecss.com/) frontend framework.
