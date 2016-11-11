@@ -1,4 +1,4 @@
-let greetings = [
+const greetings = [
   'Hello World',
   'Hola Mundo',
   'ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਦੁਨਿਆ',
