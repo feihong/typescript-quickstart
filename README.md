@@ -9,7 +9,7 @@ A very simple TypeScript example project, for Python developers.
 ```
 npm install -g typescript typings webpack
 npm link typescript
-typings install dt~jquery --global --save
+typings install dt~jquery dt~webspeechapi --global --save
 ```
 
 ## Python
@@ -28,3 +28,5 @@ typings install dt~jquery --global --save
 ## Notes
 
 We're using the [Materialize](http://materializecss.com/) frontend framework.
+
+To remove jquery typings, run `typings remove jquery --global`.
