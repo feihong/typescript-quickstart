@@ -1,3 +1,6 @@
+import {triggerDebug} from './debug'
+
+
 interface Movie {
   title: string,
   director: string,
@@ -38,8 +41,4 @@ $('button.speak').on('click', (evt) => {
   }
 })
 
-$('button.debug').on('click', (evt) => {
-  $('#result').text('before debug')
-  debugger
-  $('#result').text('after debug')
-})
+$('button.debug').on('click', triggerDebug)
