@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html lang='en'><head>
+<html lang='en'>
+<head>
 <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 <meta http-equiv='x-ua-compatible' content='ie=edge'>
 <title>TypeScript Quickstart</title>
-<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-<link rel='stylesheet' href='https://code.getmdl.io/1.2.1/material.indigo-pink.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css'>
 </head>
-<body>
+<body class='container'>
 
-<div class='mdl-grid'>
-  <div class="mdl-layout-spacer"></div>
-  <div class='mdl-cell--6-col mdl-grid--no-spacing'>
-    <h1>TypeScript Quickstart</h1>
+<h1>TypeScript Quickstart</h1>
 
-    <h4 id='message'>???</h4>
-
-    <button class='mdl-button mdl-js-button mdl-button--raised mdl-button--colored'>Change greeting</button>
+<div class='row'>
+  <div class='col s12 m6'>
+    <div class='card hoverable deep-orange darken-3'>
+      <div class='card-content white-text'>
+        <span class='card-title'>Hello World</span>
+        <p id='message'>???</p>
+      </div>
+      <div class='card-action'>
+        <button class='btn waves-effect'>Change greeting</button>
+      </div>
+    </div>
   </div>
-  <div class="mdl-layout-spacer"></div>
 </div>
 
-<script src='http://code.jquery.com/jquery-3.1.1.min.js'>
-</script>
-<script defer src='https://code.getmdl.io/1.2.1/material.min.js'></script>
+
+<script src='http://code.jquery.com/jquery-3.1.1.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js'></script>
 <script src='bundle.js'></script>
 </body>
 </html>

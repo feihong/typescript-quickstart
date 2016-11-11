@@ -1,3 +1,9 @@
+interface Movie {
+  title: string,
+  director: string,
+  year: number,
+}
+
 const greetings = [
   'Hello World',
   'Hola Mundo',
