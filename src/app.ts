@@ -1,4 +1,5 @@
 import {triggerDebug} from './debug'
+import {speak} from './speak'
 
 
 interface Movie {
@@ -31,14 +32,27 @@ $('button.greeting').on('click', (evt) => {
 })
 
 $('button.speak').on('click', (evt) => {
-  if (window.speechSynthesis == undefined) {
-    $('#result').text('Web Speech API was not detected')
+  let printResult = (s: string) => $('#result').text(s)
+  let success = speak(
+    'Hello TypeScript!',
+    () => printResult('Done speaking')
+  )
+  if (success) {
+    printResult('Speaking...')
   } else {
-    $('#result').text('Speaking...')
-    let utterance = new SpeechSynthesisUtterance('Hello TypeScript!')
-    speechSynthesis.speak(utterance)
-    utterance.onend = (evt) => $('#result').text('Done speaking')
+    printResult('Speaking failed!')
   }
 })
 
 $('button.debug').on('click', triggerDebug)
+
+$('button.json').on('click', (evt) => {
+  $.get('movies.json', (data) => {
+    let movies: Movie[] = data
+    for (let movie of movies) {
+      console.log(movie.title, movie.director, movie.year)
+    }
+    let titles = movies.map((m) => `${m.title} (${m.year})`)
+    $('#result').text(`Got ${movies.length} movies: ${titles.join(', ')}`)
+  })
+})
