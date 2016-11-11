@@ -1,1 +1,2 @@
-console.log('Hello World!')
+
+$('#message').text('Hello World!')
