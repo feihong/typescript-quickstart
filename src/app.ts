@@ -37,3 +37,9 @@ $('button.speak').on('click', (evt) => {
     utterance.onend = (evt) => $('#result').text('Done speaking')
   }
 })
+
+$('button.debug').on('click', (evt) => {
+  $('#result').text('before debug')
+  debugger
+  $('#result').text('after debug')
+})

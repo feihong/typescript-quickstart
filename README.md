@@ -30,3 +30,5 @@ typings install dt~jquery --global --save
 We're using the [Materialize](http://materializecss.com/) frontend framework.
 
 To remove jquery typings, run `typings remove jquery --global`.
+
+Debugging with source maps seems to only work in Chrome.
