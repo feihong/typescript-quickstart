@@ -25,6 +25,16 @@ pip install Invoke
 typings install dt~jquery --global --save
 ```
 
+## Running the server
+
+The following command will run the web server and webpack watcher at the same time.
+
+```
+inv serve
+```
+
+Run `inv -l` to list all available tasks.
+
 ## Notes
 
 We're using the [Materialize](http://materializecss.com/) frontend framework.
